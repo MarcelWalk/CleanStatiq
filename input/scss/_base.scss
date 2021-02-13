@@ -1,0 +1,44 @@
+html,body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $background;
+    color: $foreground;
+    font-family: Raleway, sans-serif;
+}
+
+main{
+    padding: 3rem 1.5rem 1rem;
+    display: block;
+    height: 100%;
+
+    @media screen and (min-width: $medium) {
+      padding-left: calc(1.5rem + #{$navWidth});
+    }
+  
+    @media screen and (max-width: $medium - 1) {
+      padding-top: calc(3rem + #{$burgerContainerHeight});
+    }
+}
+
+.page-content{
+    width: 100%;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 800px){
+    main {
+        padding-left: calc(1.5rem + 100px);
+    }
+}
+
+a, a:visited {
+    color: $accent;
+    text-decoration: none;
+}
+
+p img{
+    width: 45rem;
+    height: 100%;
+}
